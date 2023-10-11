@@ -1,0 +1,52 @@
+[2023-10-11 12:57:06,914] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: 1_init_once_seed_data.load_seed_data_once manual__2023-10-11T12:57:06.456977+00:00 [queued]>
+[2023-10-11 12:57:06,924] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: 1_init_once_seed_data.load_seed_data_once manual__2023-10-11T12:57:06.456977+00:00 [queued]>
+[2023-10-11 12:57:06,925] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-11 12:57:06,925] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-10-11 12:57:06,926] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-11 12:57:06,940] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): load_seed_data_once> on 2023-10-11 12:57:06.456977+00:00
+[2023-10-11 12:57:06,944] {standard_task_runner.py:52} INFO - Started process 1702 to run task
+[2023-10-11 12:57:06,947] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', '1_init_once_seed_data', 'load_seed_data_once', 'manual__2023-10-11T12:57:06.456977+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/init.py', '--cfg-path', '/tmp/tmpxk4h1923', '--error-file', '/tmp/tmp12644ppn']
+[2023-10-11 12:57:06,947] {standard_task_runner.py:80} INFO - Job 36: Subtask load_seed_data_once
+[2023-10-11 12:57:07,000] {task_command.py:369} INFO - Running <TaskInstance: 1_init_once_seed_data.load_seed_data_once manual__2023-10-11T12:57:06.456977+00:00 [running]> on host c2e542998ec2
+[2023-10-11 12:57:07,109] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=1_init_once_seed_data
+AIRFLOW_CTX_TASK_ID=load_seed_data_once
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-11T12:57:06.456977+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-10-11T12:57:06.456977+00:00
+[2023-10-11 12:57:07,111] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-10-11 12:57:07,112] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'cd / && ls']
+[2023-10-11 12:57:07,125] {subprocess.py:85} INFO - Output:
+[2023-10-11 12:57:07,127] {subprocess.py:92} INFO - ***-scheduler-autorestart
+[2023-10-11 12:57:07,128] {subprocess.py:92} INFO - bin
+[2023-10-11 12:57:07,129] {subprocess.py:92} INFO - boot
+[2023-10-11 12:57:07,130] {subprocess.py:92} INFO - clean-logs
+[2023-10-11 12:57:07,130] {subprocess.py:92} INFO - dags
+[2023-10-11 12:57:07,131] {subprocess.py:92} INFO - dbt_snowflake
+[2023-10-11 12:57:07,132] {subprocess.py:92} INFO - dev
+[2023-10-11 12:57:07,132] {subprocess.py:92} INFO - entrypoint
+[2023-10-11 12:57:07,133] {subprocess.py:92} INFO - etc
+[2023-10-11 12:57:07,134] {subprocess.py:92} INFO - home
+[2023-10-11 12:57:07,134] {subprocess.py:92} INFO - lib
+[2023-10-11 12:57:07,135] {subprocess.py:92} INFO - lib64
+[2023-10-11 12:57:07,136] {subprocess.py:92} INFO - media
+[2023-10-11 12:57:07,136] {subprocess.py:92} INFO - mnt
+[2023-10-11 12:57:07,137] {subprocess.py:92} INFO - opt
+[2023-10-11 12:57:07,137] {subprocess.py:92} INFO - proc
+[2023-10-11 12:57:07,138] {subprocess.py:92} INFO - root
+[2023-10-11 12:57:07,139] {subprocess.py:92} INFO - run
+[2023-10-11 12:57:07,140] {subprocess.py:92} INFO - sbin
+[2023-10-11 12:57:07,140] {subprocess.py:92} INFO - scripts
+[2023-10-11 12:57:07,141] {subprocess.py:92} INFO - srv
+[2023-10-11 12:57:07,141] {subprocess.py:92} INFO - sys
+[2023-10-11 12:57:07,142] {subprocess.py:92} INFO - tmp
+[2023-10-11 12:57:07,143] {subprocess.py:92} INFO - usr
+[2023-10-11 12:57:07,143] {subprocess.py:92} INFO - var
+[2023-10-11 12:57:07,144] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-10-11 12:57:07,182] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=1_init_once_seed_data, task_id=load_seed_data_once, execution_date=20231011T125706, start_date=20231011T125706, end_date=20231011T125707
+[2023-10-11 12:57:07,200] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-10-11 12:57:07,232] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

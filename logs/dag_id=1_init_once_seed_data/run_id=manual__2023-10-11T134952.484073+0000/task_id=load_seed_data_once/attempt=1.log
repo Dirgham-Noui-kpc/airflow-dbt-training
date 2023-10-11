@@ -1,0 +1,28 @@
+[2023-10-11 13:49:52,877] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: 1_init_once_seed_data.load_seed_data_once manual__2023-10-11T13:49:52.484073+00:00 [queued]>
+[2023-10-11 13:49:52,890] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: 1_init_once_seed_data.load_seed_data_once manual__2023-10-11T13:49:52.484073+00:00 [queued]>
+[2023-10-11 13:49:52,890] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-11 13:49:52,891] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2023-10-11 13:49:52,892] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-10-11 13:49:52,906] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): load_seed_data_once> on 2023-10-11 13:49:52.484073+00:00
+[2023-10-11 13:49:52,911] {standard_task_runner.py:52} INFO - Started process 4239 to run task
+[2023-10-11 13:49:52,913] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', '1_init_once_seed_data', 'load_seed_data_once', 'manual__2023-10-11T13:49:52.484073+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/init.py', '--cfg-path', '/tmp/tmp8qxd6mqv', '--error-file', '/tmp/tmplslqg7yx']
+[2023-10-11 13:49:52,914] {standard_task_runner.py:80} INFO - Job 42: Subtask load_seed_data_once
+[2023-10-11 13:49:52,975] {task_command.py:369} INFO - Running <TaskInstance: 1_init_once_seed_data.load_seed_data_once manual__2023-10-11T13:49:52.484073+00:00 [running]> on host c2e542998ec2
+[2023-10-11 13:49:53,077] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=1_init_once_seed_data
+AIRFLOW_CTX_TASK_ID=load_seed_data_once
+AIRFLOW_CTX_EXECUTION_DATE=2023-10-11T13:49:52.484073+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-10-11T13:49:52.484073+00:00
+[2023-10-11 13:49:53,078] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2023-10-11 13:49:53,079] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'cd /dbt_snowflake && pwd && ls']
+[2023-10-11 13:49:53,088] {subprocess.py:85} INFO - Output:
+[2023-10-11 13:49:53,090] {subprocess.py:92} INFO - /dbt_snowflake
+[2023-10-11 13:49:53,097] {subprocess.py:96} INFO - Command exited with return code 0
+[2023-10-11 13:49:53,126] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=1_init_once_seed_data, task_id=load_seed_data_once, execution_date=20231011T134952, start_date=20231011T134952, end_date=20231011T134953
+[2023-10-11 13:49:53,167] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-10-11 13:49:53,193] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
